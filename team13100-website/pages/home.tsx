@@ -1,10 +1,11 @@
 import React from 'react'
-import Link from '../node_modules/next/link';
+import Link from 'next/link';
+import HomeDiv from '../components/home';
 
 export default function Home() {
   return (
     <>
-        <div>Home</div>
+      <HomeDiv />
         <Link href='/'>
             <a>Back to home</a>
         </Link>
