@@ -1,15 +1,15 @@
 import React from 'react'
 
 type Props = {
-    Image: string
+    image: string
     Name: string
     Description: string
 }
 
-export default function Entry({ Image, Name, Description }: Props) {
+export default function Entry({ image, Name, Description }: Props) {
   return (
     <>
-        <img src = { Image } />
+        <img src = { image } />
         <h1>{ Name }</h1>
         <p>{ Description }</p>
     </>

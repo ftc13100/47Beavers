@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Entry from '../components/members/entry';
 
 type Props = {}
 
+interface People {
+  members: Person[]
+}
+
+interface Person {
+  img: string,
+  name: string,
+  description: string
+}
+
 function Members({}: Props) {
+  const [members, setMembers] = useState<Person[]>([]);
+
+  useEffect(() => {  
+    const data:People = require('../public/assets/members.json');
+    console.log(data.members)
+    setMembers(data.members);
+  }, [])
+  
+
   return (
     <>
-
-        <Entry Image='https://static.wixstatic.com/media/74248e_57974c8492d84df48c54b09a5d409ee2~mv2.jpg/v1/crop/x_0,y_499,w_2985,h_3034/fill/w_213,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Kartavya%20ProPIc_JPG.jpg' Name='Kartavya Gaur' Description='Kartavya'/>
+        {members.map(
+          member => 
+            <Entry key={member.name} image = {'/assets/members/' + member.img} Name = {member.name} Description = {member.description}/>
+          )
+        }
     </>
   )
 }
