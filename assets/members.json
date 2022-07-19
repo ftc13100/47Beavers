@@ -1,0 +1,59 @@
+{
+    "members": [
+        {
+            "name": "Kartavya Gaur",
+            "img": "kartavya.jpg",
+            "description": null
+        },
+        {
+            "name": "Jeeva Padmanabhan",
+            "img": "jeeva.jpg",
+            "description": null
+        },
+        {
+            "name": "Aryan Jain",
+            "img": "aryan.jpg",
+            "description": null
+        },
+        {
+            "name": "Ethan Nee",
+            "img": "ethan.jpg",
+            "description": null
+        },
+        {
+            "name": "Ethan Huang",
+            "img": "huang.jpg",
+            "description": null
+        },
+        {
+            "name": "Jessie (Jiaxi) Lin",
+            "img": "jessie.jpg",
+            "description": null
+        },
+        {
+            "name": "Kyler Gellisen",
+            "img": "kyler.jpg",
+            "description": null
+        },
+        {
+            "name": "Larson Ozbun",
+            "img": "larson.jpg",
+            "description": null
+        },
+        {
+            "name": "Michael Stallard",
+            "img": "michael.jpg",
+            "description": null
+        },
+        {
+            "name": "Patrick Le",
+            "img": "patrick.jpg",
+            "description": null
+        },
+        {
+            "name": "Sachet Korada",
+            "img": "sachet.jpg",
+            "description": null
+        }
+    ]
+}
