@@ -6,7 +6,7 @@ type Props = {
     Description: string
 }
 
-export default function Entry({Image, Name, Description}: Props) {
+export default function Entry({ Image, Name, Description }: Props) {
   return (
     <>
         <img src = { Image } />
