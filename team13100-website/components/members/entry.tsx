@@ -1,18 +1,21 @@
 import React from 'react'
 import Image from 'next/image'
+import styles from '../../styles/Members.module.scss'
 
 type Props = {
-    image: string
-    Name: string
-    Description: string
+    img: string
+    name: string
+    description: string
 }
 
-export default function Entry({ image, Name, Description }: Props) {
+export default function Entry({ img, name, description }: Props) {
   return (
-    <>
-        <img src = { image } />
-        <h1>{ Name }</h1>
-        <p>{ Description }</p>
-    </>
+    <div>
+      <img 
+        src = { img } 
+      />        
+      <h1>{ name }</h1>
+      <p>{ description }</p>
+    </div>
   )
 }

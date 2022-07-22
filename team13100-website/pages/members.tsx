@@ -33,14 +33,14 @@ function Members({}: Props) {
       {
         members.map(
           member => 
-            <Entry key={member.name} image = {'/assets/members/' + member.img} Name = {member.name} Description = {member.description}/>
+            <Entry key={member.name} img = {'/assets/members/' + member.img} name = {member.name} description = {member.description}/>
         )
       }
       <Header title='47 Beavers Mentors'/>
       {
         mentors.map(
           mentor => 
-            <Entry key={mentor.name} image = {'/assets/mentors/' + mentor.img} Name = {mentor.name} Description = {mentor.description}/>
+            <Entry key={mentor.name} img = {'/assets/mentors/' + mentor.img} name = {mentor.name} description = {mentor.description}/>
         )
       }
     </>
