@@ -1,6 +1,9 @@
-.profile {
-    .picture {
-        float: left;
-        size: 50px;
+.flexbox {
+    .container {
+        display: flex;
+    }
+    .item{
+        max-width: 200px;
+        height: 100px;
     }
 }
