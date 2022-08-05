@@ -10,14 +10,23 @@ type Props = {
 
 export default function Entry({ img, name, description }: Props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.item}>
-        <img 
-          src = { img } 
-        />
+    <>
+       
+
+      <div className={styles.container}>
+        <div className={styles.image}>
+          <Image 
+            src = { img } 
+            layout = "fill" 
+            objectFit = 'contain'
+          />
+        </div>
+        <div className={styles.item}>
+          <h1>{ name }</h1>
+          <p>{ description }</p>
+        </div>
+        
       </div>
-      <h1>{ name }</h1>
-      <p>{ description }</p>
-    </div>
+    </>
   )
 }

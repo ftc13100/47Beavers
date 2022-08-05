@@ -1,9 +1,18 @@
-.flexbox {
-    .container {
-        display: flex;
-    }
-    .item{
-        max-width: 200px;
-        height: 100px;
-    }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    min-width: 20em;
+    min-height: 20em;
+    margin: 30px;
+}
+
+.item {
+    position: relative;
+    width: 500px;
+    
 }

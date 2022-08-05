@@ -68,11 +68,3 @@ export default function Home() {
     </div>
   )
 }
-
-const NavigationBar = () => {
-  return (
-    <title>
-      <h1>FTC Team 13100 Website</h1>
-    </title>
-  )
-}
