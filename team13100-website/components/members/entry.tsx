@@ -11,8 +11,6 @@ type Props = {
 export default function Entry({ img, name, description }: Props) {
   return (
     <>
-       
-
       <div className={styles.container}>
         <div className={styles.image}>
           <Image 
@@ -25,7 +23,6 @@ export default function Entry({ img, name, description }: Props) {
           <h1>{ name }</h1>
           <p>{ description }</p>
         </div>
-        
       </div>
     </>
   )

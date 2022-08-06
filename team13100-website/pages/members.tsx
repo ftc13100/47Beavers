@@ -27,8 +27,13 @@ function Members() {
             a.name.localeCompare(b.name)
         )
         .map(
-          member => 
-            <Entry key={member.name} img = {'/assets/members/' + member.img} name = {member.name} description = {member.description}/>
+          ({name, img, description}) => 
+            <Entry 
+              key={name}
+              img = {`/assets/members/${img}`}
+              name = {name}
+              description = {description}
+            />
         )
       }
       <Header title='47 Beavers Mentors'/>
@@ -38,8 +43,13 @@ function Members() {
             a.name.localeCompare(b.name)
         )
         .map(
-          mentor => 
-            <Entry key={mentor.name} img = {'/assets/mentors/' + mentor.img} name = {mentor.name} description = {mentor.description}/>
+          ({name, img, description}) => 
+            <Entry 
+              key={ name } 
+              img = {`/assets/mentors/${img}`}
+              name = {name}
+              description = {description}
+            />
         )
       }
     </>
