@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Entry from '../components/members/entry';
-import Header from '../components/members/header';
+import styles from '../styles/Members.module.scss'
+import Image from 'next/image'
 
 interface Person {
   img: string,
@@ -8,7 +8,7 @@ interface Person {
   description: string
 }
 
-function Members() {
+export default function Members() {
   const [members, setMembers] = useState<Person[]>([]);
   const [mentors, setMentors] = useState<Person[]>([])
 
@@ -19,8 +19,9 @@ function Members() {
   
 
   return (
-    <>
-      <Header title='47 Beavers Members'/>
+    <div className={styles.header}>
+      <h1>47 Beavers Members</h1>
+      
       {
         members.sort(
           (a, b) => 
@@ -36,7 +37,9 @@ function Members() {
             />
         )
       }
-      <Header title='47 Beavers Mentors'/>
+      
+      <h1>47 Beavers Mentors</h1>
+      
       {
         mentors.sort(
           (a, b) => 
@@ -52,8 +55,24 @@ function Members() {
             />
         )
       }
-    </>
+    </div>
   )
 }
 
-export default Members;
+const Entry = ({ img, name, description }: Person) => {
+  return (
+    <div className={styles.entry}>
+      <div className={styles.image}>
+        <Image 
+          src = { img } 
+          layout = "fill" 
+          objectFit = 'contain'
+        />
+      </div>
+      <div className={styles.item}>
+        <h1>{ name }</h1>
+        <p>{ description }</p>
+      </div>
+    </div>
+  )
+}
