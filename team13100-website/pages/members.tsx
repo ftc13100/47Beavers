@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../styles/Members.module.scss'
 import Image from 'next/image'
+import Head from 'next/head';
+import { Person } from '../components/types';
 
-interface Person {
-  img: string,
-  name: string,
-  description: string
-}
 
 export default function Members() {
   const [members, setMembers] = useState<Person[]>([]);
@@ -17,9 +14,14 @@ export default function Members() {
     setMentors(require('../public/assets/mentors.json').members);
   }, [])
   
-
   return (
-    <div className={styles.header}>
+    <div className={styles.header}> 
+      <Head>
+        <title>Members - 47 Beavers</title>
+        <meta name="members" content="Page for members and mentors of FTC Team 13100" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <h1>47 Beavers Members</h1>
       
       {
@@ -66,7 +68,11 @@ const Entry = ({ img, name, description }: Person) => {
         <Image 
           src = { img } 
           layout = "fill" 
+          alt= {`Image of ${name}`} 
           objectFit = 'contain'
+          sizes="(min-width: 75em) 33vw,
+              (min-width: 48em) 50vw,
+              100vw"
         />
       </div>
       <div className={styles.item}>
