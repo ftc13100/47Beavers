@@ -22,7 +22,7 @@ export default function Members() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>47 Beavers Members</h1>
+      <h1 id = 'members'>47 Beavers Members</h1>
       
       {
         members.sort(
@@ -40,7 +40,7 @@ export default function Members() {
         )
       }
       
-      <h1>47 Beavers Mentors</h1>
+      <h1 id = 'mentor'>47 Beavers Mentors</h1>
       
       {
         mentors.sort(
