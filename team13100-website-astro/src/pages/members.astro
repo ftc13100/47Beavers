@@ -1,37 +1,37 @@
 ---
-import TeamEntry from '@components/TeamEntry';
-import Layout from '@layouts/Layout.astro';
-import memberData  from '../../public/assets/members.json';
-import mentorData from '../../public/assets/mentors.json';
+import TeamEntry from "@components/TeamEntry";
+import Layout from "@layouts/Layout.astro";
+import memberData from "../../public/assets/members.json";
+import mentorData from "../../public/assets/mentors.json";
 ---
 
-<Layout title = "47 Beavers - Members">
-    <main class="flex flex-col justify-center">
-        <h1 class="text-center font-bold text-3xl my-12">47 Beavers Members</h1>
-        {
-            memberData
-                .members
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map(({name, img, description}) => (
-                    <TeamEntry
-                        name={name}
-                        image={`/assets/members/${img}`}
-                        description={description}
-                    />
-                )) 
-        }
-        <h1 class="text-center font-bold text-3xl my-12">47 Beavers Mentors</h1>
-        {
-            mentorData
-                .members
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map(({name, img, description}) => (
-                    <TeamEntry
-                        name={name}
-                        image={`/assets/mentors/${img}`}
-                        description={description}
-                    />
-                ))
-        }
-    </main>
+<Layout title="47 Beavers - Members">
+  <main class="flex flex-col justify-center">
+    <h1 class="text-center font-bold text-3xl mt-12 mb-6">
+      47 Beavers Members
+    </h1>
+    {
+      memberData.members
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(({ name, img, description }) => (
+          <TeamEntry
+            name={name}
+            image={`/assets/members/${img}`}
+            description={description}
+          />
+        ))
+    }
+    <h1 class="text-center font-bold text-3xl my-12">47 Beavers Mentors</h1>
+    {
+      mentorData.members
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(({ name, img, description }) => (
+          <TeamEntry
+            name={name}
+            image={`/assets/mentors/${img}`}
+            description={description}
+          />
+        ))
+    }
+  </main>
 </Layout>
