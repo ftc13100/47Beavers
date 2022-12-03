@@ -9,8 +9,8 @@ const NavBar:FC = () => {
                 <li className={styles.item}><Link href='/'>Home</Link></li>
                 <li className={styles.item}>Beaver Camps</li>
                 <li className={styles.item}>Robot</li>
-                <li className={styles.item}><Link href='#members' scroll={false}><a>Members</a></Link></li>
-                <li className={styles.item}><Link href='#mentors' scroll={false}><a>Mentors</a></Link></li>
+                <li className={styles.item}><Link href='/members/#members' scroll={true}><a>Members</a></Link></li>
+                <li className={styles.item}><Link href='/members/#mentor' scroll={true}><a>Mentors</a></Link></li>
             </ul>
         </nav>
     );
