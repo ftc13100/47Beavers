@@ -8,9 +8,15 @@ const Header = () => {
         </a>
 
         <nav className="flex space-x-8">
-          <a href="/"> Home </a>
-          <a href="/about"> History </a>
-          <a href="/members"> Members </a>
+          <a href="/" className="hover:text-white hover:underline">Home</a>
+          <a href="/about" className="hover:text-white hover:underline">History</a>
+          <a href="/members" className="hover:text-white hover:underline">Members</a>
+          <div className="group">
+            <a href="/camps" className="group-hover:text-white group-hover:underline"> Camps </a>
+            <div className="hidden group-hover:flow-root">
+              <a href="/camps/2021">2021</a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
