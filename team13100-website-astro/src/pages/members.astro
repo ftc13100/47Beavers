@@ -7,7 +7,7 @@ import mentorData from "../../public/assets/mentors.json";
 
 <Layout title="47 Beavers - Members">
   <main class="flex flex-col justify-center">
-    <h1 class="text-center font-bold text-3xl mt-12 mb-6">
+    <h1 id="members" class="text-center font-bold text-3xl mt-12 mb-6">
       47 Beavers Members
     </h1>
     {
@@ -21,7 +21,9 @@ import mentorData from "../../public/assets/mentors.json";
           />
         ))
     }
-    <h1 class="text-center font-bold text-3xl my-12">47 Beavers Mentors</h1>
+    <h1 id="mentors" class="text-center font-bold text-3xl my-12">
+      47 Beavers Mentors
+    </h1>
     {
       mentorData.members
         .sort((a, b) => a.name.localeCompare(b.name))
