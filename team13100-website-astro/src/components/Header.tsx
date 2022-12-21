@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header className="bg-blue-800 w-full sticky top-0 justify-between">
       <div className="mx-24 h-12 flex items-center justify-between py-16">
-        <a className="my-8" href="/">
+        <a className="my-8 text-white" href="/">
           <h1 className="font-bold text-2xl">FTC Team #13100</h1>
           <h1 className="font-bold text-2xl">47 Beavers</h1>
         </a>
