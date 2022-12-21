@@ -1,22 +1,16 @@
-import React from 'react'
 import Image from 'next/image'
-import styles from '../../styles/Members.module.scss'
+import styles from '../styles/Members.module.scss'
+import { Person } from '../types'
 
-type Props = {
-    img: string
-    name: string
-    description: string
-}
-
-export default function Entry({ img, name, description }: Props) {
-  return (
-    <>
-      <div className={styles.container}>
+const Entry = ({ img, name, description }: Person) => {
+    return (
+      <div className={styles.entry}>
         <div className={styles.image}>
           <Image 
             src = { img } 
             layout = "fill" 
             objectFit = 'contain'
+            alt={`Image of ${name}`}
           />
         </div>
         <div className={styles.item}>
@@ -24,6 +18,5 @@ export default function Entry({ img, name, description }: Props) {
           <p>{ description }</p>
         </div>
       </div>
-    </>
-  )
-}
+    )
+  }

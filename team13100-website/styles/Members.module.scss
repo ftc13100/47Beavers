@@ -1,7 +1,8 @@
-.container {
+.entry {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .image {
@@ -11,7 +12,13 @@
     margin: 30px;
 }
 
-.item {
+.item { 
     position: relative;
     width: 500px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,0 +1,24 @@
+{
+  "members": [
+    {
+      "name": "Adhvayith Sriram",
+      "img": "adhvayith.jpg",
+      "description": "Adhvayith is an alumni from Poolesville’s Science, Math, and Computer Science Program and is studying mechanical engineering at the University of Texas, Austin. Adhvayith has been a part of the team since its rookie season and was a captain during the 2019-2020 season. He mainly helped design and build the robot, but now advises as a mentor. In his free time, Adhvayith loves skiing, playing Fortnite, and playing cricket."
+    },
+    {
+      "name": "Paige Yu",
+      "img": "paige.jpg",
+      "description": "Paige is a rising freshman at Carnegie Mellon University. She is  an alumni from the Science, Math, and Computer Science Program at Poolesville High School. She enjoys partaking in competitions such as Science Olympiad and DECA and has won multiple awards at the regional and state level. In her free time, she enjoys participating in orchestra, playing volleyball, and painting."
+    },
+    {
+      "name": "Rithvik Bhogavilli",
+      "img": "bhog.jpg",
+      "description": "Rithvik is an alumni from Poolesville’s Science, Math, and Computer Science Program. He studies Computer Engineering at the University of Illinois at Urbana Champaign. He has been involved in FIRST Robotics since middle school and joined 47 Beavers as a sophomore. Rithvik programmed for the 47 Beavers and was the Programming Lead for the school’s FRC team. Outside of robotics, he was the captain of the school’s Computer Team and Science Olympiad team, then regularly competed in cybersecurity and computer science competitions, in addition to watching space shuttle crash documentaries."
+    },
+    {
+      "name": "Asini Gulanawatthalage",
+      "img": "asini.jpg",
+      "description": "Asini is a rising freshman at Carnegie Mellon University. She an alumni from the Science, Math, and Computer Science Program at Poolesville High School. Her favorite subjects in school are math and chemistry. During her free time, she likes drawing, playing with her cat, and finding new instant noodle recipes."
+    }
+  ]
+}

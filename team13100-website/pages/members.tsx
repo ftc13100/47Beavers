@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import Entry from '../components/members/entry';
-import Header from '../components/members/header';
+import styles from '../styles/Members.module.scss'
+import Image from 'next/image'
+import Head from 'next/head';
+import { Person } from '../components/types';
 
-interface Person {
-  img: string,
-  name: string,
-  description: string
-}
 
-function Members() {
+export default function Members() {
   const [members, setMembers] = useState<Person[]>([]);
   const [mentors, setMentors] = useState<Person[]>([])
 
@@ -17,10 +14,16 @@ function Members() {
     setMentors(require('../public/assets/mentors.json').members);
   }, [])
   
-
   return (
-    <>
-      <Header title='47 Beavers Members'/>
+    <div className={styles.header}> 
+      <Head>
+        <title>Members - 47 Beavers</title>
+        <meta name="members" content="Page for members and mentors of FTC Team 13100" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <h1 id = 'members'>47 Beavers Members</h1>
+      
       {
         members.sort(
           (a, b) => 
@@ -36,7 +39,9 @@ function Members() {
             />
         )
       }
-      <Header title='47 Beavers Mentors'/>
+      
+      <h1 id = 'mentor'>47 Beavers Mentors</h1>
+      
       {
         mentors.sort(
           (a, b) => 
@@ -52,8 +57,28 @@ function Members() {
             />
         )
       }
-    </>
+    </div>
   )
 }
 
-export default Members;
+const Entry = ({ img, name, description }: Person) => {
+  return (
+    <div className={styles.entry}>
+      <div className={styles.image}>
+        <Image 
+          src = { img } 
+          layout = "fill" 
+          alt= {`Image of ${name}`} 
+          objectFit = 'contain'
+          sizes="(min-width: 75em) 33vw,
+              (min-width: 48em) 50vw,
+              100vw"
+        />
+      </div>
+      <div className={styles.item}>
+        <h1>{ name }</h1>
+        <p>{ description }</p>
+      </div>
+    </div>
+  )
+}
