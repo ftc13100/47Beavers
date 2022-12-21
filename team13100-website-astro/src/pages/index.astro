@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import MoreInfoCard from "@components/Card";
 ---
 
@@ -21,11 +20,10 @@ import MoreInfoCard from "@components/Card";
     </section>
     <section class="flex flex-row items-center justify-center h-screen">
       <MoreInfoCard title="About Us" link="/about">
-        <p class="text-center text-white">
+        <p class="text-center text-white md:text-lg">
           Our team was founded in 2017 and is based in Montgomery County,
           Maryland. This will be our seventh season competing in the FIRST Tech
           Challenge (FTC).
-          <br />
           <br />
           The team is actually a joint-school team, including members from multiple
           high schools in Montgomery County such as Poolesville, Quince Orchard,
@@ -33,7 +31,7 @@ import MoreInfoCard from "@components/Card";
         </p>
       </MoreInfoCard>
       <MoreInfoCard title="About Us" link="/about">
-        <p class="text-center text-white">
+        <p class="text-center text-white xl:text-xl">
           Our team wants to promote STEM in our community and to introduce new
           opportunities to younger students!
           <br />
@@ -44,7 +42,7 @@ import MoreInfoCard from "@components/Card";
         </p>
       </MoreInfoCard>
       <MoreInfoCard title="About Us" link="/about">
-        <p class="text-center text-white">
+        <p class="text-center text-white md:text-xl">
           Meet our team members who not only work on various aspects of the
           robot, but also teach the various classes offered in BeaverCamps.
           <br />
