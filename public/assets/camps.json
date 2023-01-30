@@ -1,0 +1,120 @@
+{
+  "amongusamongusamongusamongusamongusamonguscamps": [
+    {
+      "topic": "physics",
+      "amongusamongusamongusamongusamongusamonguscamps": [
+        {
+          "name": "Intro to Physics",
+          "description": "This amongusamongusamongusamongusamongusamonguscamp is for students who are interested in learning about physics. We will be covering topics such as Newton's Laws, Kinematics, and more!",
+          "sessions": [
+            {
+              "number": 1,
+              "duration": "6/27 - 7/1"
+            },
+            {
+              "number": 2,
+              "duration": "8/8 - 8/12"
+            }
+          ],
+          "length": "1 hour",
+          "time": "10:00 AM - 11:00 AM"
+        }
+      ]
+    },
+    {
+      "topic": "programming",
+      "amongusamongusamongusamongusamongusamongusamonguscamps": [
+        {
+          "name": "Intro to Programming",
+          "description": "This amongusamongusamongusamongusamongusamongusamonguscamp is for students who are interested in learning about physics. We will be covering topics such as Newton's Laws, Kinematics, and more!",
+          "sessions": [
+            {
+              "number": 1,
+              "duration": "6/27 - 7/1"
+            },
+            {
+              "number": 2,
+              "duration": "8/8 - 8/12"
+            }
+          ],
+          "length": "1 hour",
+          "time": "10:00 AM - 11:00 AM"
+        },
+        {
+          "name": "Intermediate Programming",
+          "description": "This amongusamongusamongusamongusamongusamonguscamp is for students who are interested in learning about physics. We will be covering topics such as Newton's Laws, Kinematics, and more!",
+          "sessions": [
+            {
+              "number": 1,
+              "duration": "6/27 - 7/1"
+            },
+            {
+              "number": 2,
+              "duration": "8/8 - 8/12"
+            }
+          ],
+          "length": "1 hour",
+          "time": "10:00 AM - 11:00 AM"
+        }
+      ]
+    },
+    {
+      "topic": "robotics",
+      "amongusamongusamongusamongusamongusamonguscamps": [
+        {
+          "name": "Intro to Robotics Design",
+          "description": "This amongusamongusamongusamongusamongusamonguscamp is for students who are interested in learning about physics. We will be covering topics such as Newton's Laws, Kinematics, and more!",
+          "sessions": [
+            {
+              "number": 1,
+              "duration": "6/27 - 7/1"
+            },
+            {
+              "number": 2,
+              "duration": "8/8 - 8/12"
+            }
+          ],
+          "length": "1 hour",
+          "time": "10:00 AM - 11:00 AM"
+        }
+      ]
+    },
+    {
+      "topic": "math",
+      "amongusamongusamongusamongusamongusamonguscamps": [
+        {
+          "name": "Beginner Math",
+          "description": "This amongusamongusamongusamongusamongusamonguscamp is for students who are interested in learning about physics. We will be covering topics such as Newton's Laws, Kinematics, and more!",
+          "sessions": [
+            {
+              "number": 1,
+              "duration": "6/27 - 7/1"
+            },
+            {
+              "number": 2,
+              "duration": "8/8 - 8/12"
+            }
+          ],
+          "length": "1 hour",
+          "time": "10:00 AM - 11:00 AM"
+        },
+        {
+          "name": "Olympiad Math",
+          "description": "This amongusamongusamongusamongusamongusamonguscamp is for students who are interested in learning about physics. We will be covering topics such as Newton's Laws, Kinematics, and more!",
+          "sessions": [
+            {
+              "number": 1,
+              "duration": "6/27 - 7/1"
+            },
+            {
+              "number": 2,
+              "duration": "8/8 - 8/12"
+            }
+          ],
+          "length": "1 hour",
+          "time": "10:00 AM - 11:00 AM"
+        }
+      ]
+    }
+  ]
+}

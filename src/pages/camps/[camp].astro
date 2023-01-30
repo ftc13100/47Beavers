@@ -1,0 +1,12 @@
+---
+export async function getStaticPaths() {
+  return [
+    { params: { camp: "mathematics" } },
+    { params: { camp: "physics" } },
+    { params: { camp: "robotics" } },
+    { params: { camp: "programming" } },
+  ];
+};
+
+const { camp } = Astro.params;
+---
